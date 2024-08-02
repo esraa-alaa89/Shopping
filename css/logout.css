@@ -1,0 +1,112 @@
+
+:root{
+    --primary-color: #FAF6F2;
+    --secondary-color: #DED1BD;
+    --text-color: #683B2B;
+}
+body
+{
+    background-color: var(--primary-color);
+    color: var(--text-color) !important;
+    font-family: "Inconsolata", monospace;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+/* .login-div
+{
+    color: var(--text-color);
+    box-shadow: -5px 2px 54px -9px rgb(0 0 0);
+}
+
+.login-div h1
+{
+    color: var(--text-color);
+    font-weight: 500;
+    font-size: 2.5rem;
+    line-height: 1.2;
+}
+
+.login-div p{
+    text-align: center;
+    color: #fff;
+}
+
+.login-div button
+{
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+    transition: all .5s;
+}
+.login-div button:hover
+{
+    background-color: var(--main-color) !important;
+    color: #fff;
+}
+
+.login-div a
+{
+    color: #fff;
+    list-style-type: none !important;
+    transition: all .5s;
+}
+
+.login-div a:hover
+{
+    list-style-type: initial !important;
+} */
+
+body
+{
+    background-color: var(--primary-color);
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.login-div
+{
+    color: var(--text-color);
+    box-shadow: -5px 2px 54px -9px rgb(1 1 1);
+}
+
+.login-div h1
+{
+    font-weight: 500;
+    font-size: 2.5rem;
+    line-height: 1.2;
+}
+/* .login-div input{
+    color: var(--text-color);
+} */
+.login-div p{
+    text-align: center;
+}
+
+.login-div button
+{
+    color: var(--text-color);
+    border: 1px solid var(--text-color);
+    transition: all .5s;
+}
+.login-div button:hover
+{
+    background-color: var(--text-color) !important;
+    color: #fff;
+}
+
+.login-div a
+{
+    color: var(--text-color) !important;
+    list-style-type: none !important;
+    transition: all .5s;
+}
+.login-div .ask-user{
+    color: var(--text-color) !important;
+}
+.login-div a:hover
+{
+    list-style-type: initial !important;
+}

@@ -1,0 +1,75 @@
+:root{
+    --primary-color: #FAF6F2;
+    --secondary-color: #DED1BD;
+    --text-color: #683B2B;
+}
+body 
+{
+    font-family: "Inconsolata", monospace;
+    background-color: var(--primary-color);
+    color: var(--text-color) !important;
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+:root{
+    --main-header-color: #454546; 
+    --sections-heading-color: #353434; 
+    --text-color: #959596; 
+    --nested-text-color: #fd7e14; 
+    --footer-color: #151515; 
+}
+body{
+    background-color: var(--primary-color);
+    background-color: #fff;
+    color: var(--text-color) !important;
+    font-family: "Inconsolata", monospace;
+}
+a{
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+/* ************login section************ */
+.login-div
+{
+    color: var(--text-color);
+    box-shadow: -5px 2px 54px -9px rgb(1 1 1);
+}
+
+.login-div h1
+{
+    font-weight: 500;
+    font-size: 2.5rem;
+    line-height: 1.2;
+}
+.login-div p{
+    text-align: center;
+}
+.login-div button
+{
+    color: var(--text-color);
+    border: 1px solid var(--text-color);
+    transition: all .5s;
+}
+.login-div button:hover
+{
+    background-color: var(--nested-text-color) !important;
+    color: #fff;
+}
+
+.login-div a
+{
+    color: var(--text-color) !important;
+    list-style-type: none !important;
+    transition: all .5s;
+}
+.login-div .ask-user{
+    color: var(--text-color) !important;
+}
+.login-div a:hover
+{
+    list-style-type: initial !important;
+}

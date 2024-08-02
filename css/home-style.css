@@ -1,0 +1,351 @@
+
+:root{
+    --main-header-color: #454546; 
+    --sections-heading-color: #353434; 
+    --text-color: #959596; 
+    --nested-text-color: #fd7e14; 
+    --footer-color: #151515; 
+}
+body{
+    background-color: var(--primary-color);
+    background-color: #fff;
+    color: var(--text-color) !important;
+    color: var(--text-color) !important;
+    font-family: "Inconsolata", monospace;
+}
+a{
+    color: var(--text-color);
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+/* ************navigation-bar************ */
+nav{
+    background-color: #fff;
+    color: var(--text-color);
+}
+nav a, nav ul li a, nav button{
+    background-color: #fff !important;
+    color: var(--text-color) !important;
+    transition: all 0.5s !important;
+}
+nav a:hover, nav ul li a:hover{
+    text-shadow: 2px 2px 6px var(--nested-text-color) !important;
+}
+nav a.logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+nav a.logo span{
+    color: var(--main-header-color);
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.26);
+    font-weight: 700;
+    font-size: 48px;
+    letter-spacing: 1px;
+    line-height: 62.2px;
+}
+nav a.logo:hover{
+    text-shadow: 1px 1px 4px #e4e4e4 !important;
+}
+nav ul li{
+    border-radius: 4px;
+    font-size: 21px;
+    padding: 2px;
+    padding-right: 18px;
+}
+nav ul li:last-of-type{
+    padding-right: 0;
+}
+nav ul li ul.dropdown-menu li{
+    margin: 0 12px;
+}
+nav ul li a:active{
+    border-bottom: 1px solid var(--nested-text-color);
+}
+nav form button, nav button.user-btn{
+    color: var(--main-header-color) !important;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px !important;
+    border: none !important;
+    transition: all 0.5s;
+}
+nav button i{
+    font-size: 24px;
+}
+nav button:hover{
+    text-shadow: 0px 0px 4px #e4e4e4;
+}
+
+/* ************header************ */
+header{
+    height: 100vh;
+    background-image: url(../images/bg.avif);
+    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+header .container .header-content{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    padding-left: 40px;
+}
+header h1{
+    font-size: 58px;
+    padding: 14px 0;
+}
+header span{
+    font-style: 24px;
+}
+header p{
+    font-size: 26px;
+    padding-bottom: 14px;
+    font-weight: 500;
+}
+header button{
+    background-color: var(--nested-text-color);
+    color: #fff;
+    margin-top: 18px;
+    padding: 8px 26px;
+    font-size: 24px;
+    border: 1px solid var(--text-color);
+    border-radius: 4px;
+    max-width: fit-content;
+    transition: all 0.5s;
+}
+header button:hover{
+    box-shadow: 1px 1px 4px 2px var(--nested-text-color);
+}
+
+/* ************all-products section************ */
+.products h3{
+    color: var(--sections-heading-color);
+    margin: auto;
+    font-size: 54px;
+    font-weight: 600;
+    position: relative;
+    margin-bottom: 34px;
+    width: fit-content;
+}
+.products h3::before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -8%;
+    width: 150px;
+    height: 2px;
+    background-color: var(--nested-text-color);
+    transform: translateX(-50%);
+}
+.products .product-data, .services-item{
+    color: var(--text-color);
+    position: relative;
+    height: 100% !important;
+    margin-bottom: 10px;
+    padding: 20px;
+    border: 1px solid #e4e4e4;
+    border-radius: 14px;
+    overflow: hidden;
+    transition: all 1s;
+}
+.products .product-data .product-img{
+    position: relative;
+}
+.products .product-data .product-img .product-overlay{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 5px 24px;
+    background-color: var(--footer-color);
+    color: #fff;
+    border: 1px solid var(--text-color);
+    border-radius: 4px;
+    bottom: 110%;
+    font-size: 16px;
+    opacity: 0;
+    cursor: pointer;
+    transition: all 1s; 
+}
+.products .product-data .product-img:hover .product-overlay{
+    bottom: 0;
+    opacity: 1;
+}
+.products .product-data .product-img .product-overlay:hover{
+    background-color: var(--nested-text-color);
+}
+.products .product-data .product-img img{
+    display: block;
+    margin: auto;
+    width: 200px;
+    height: 160px;
+    transition: all 1s;
+}
+.products .product-data .product-img img:hover{
+    transform: scale(1.2, 1.2);
+}
+.products .product-data .product-info{
+    position: relative;
+    padding-top: 24px;
+}
+.products .product-data .product-info h4, .services-item h4, .left-contact h4, .right-contact h4{
+    color: var(--sections-heading-color);
+    font-size: 21px;
+    font-weight: 600;
+}
+.products .product-data .product-info span, .services-item .services-icon i{
+    color: var(--nested-text-color);
+    font-size: 26px;
+    font-weight: 600;
+}
+.products .product-data .product-info span span{
+    color: var(--nested-text-color);
+    font-size: 21px;
+    font-weight: 400;
+}
+.products .product-data button{
+    color: var(--text-color);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 12px 0;
+    padding: 10px 24px;
+    border: 1px solid #e4e4e4;
+    border-radius: 5px;
+    transition: all 0.5s;
+}
+.products .product-data button i{
+    padding: 0 12px;
+}
+.products .product-data button:hover{
+    color: var(--nested-text-color) !important;
+    box-shadow: 2px 2px 2px 0 var(--text-color);
+}
+
+.products .product-data .product-info .delete-card{
+    position: absolute;
+    right: 0px;
+    bottom: 3px;
+    color: rgba(246, 56, 56, 0.732);
+    font-size: 24px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.products .product-data .product-info .delete-card:hover{
+    text-shadow: 1px 1px 4px #fff;
+}
+
+/* ************product-details************ */
+.product-details .product-data .product-info h4{
+    color: var(--nested-text-color);
+    font-size: 23px;
+}
+.product-details .product-data .product-info span{
+    color: var(--text-color);
+}
+.products .product-details .product-data .product-info h5{
+    color: var(--main-header-color);
+    font-size: 0.9em;
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+}
+.products .product-details .product-data .product-info h5.quantity{
+    color: #000;
+    font-size: 16px;
+    margin: 0 0 12px;
+    letter-spacing: 1px;
+}
+.products .product-details .product-inputs{
+    position: relative;
+}
+.products .product-details .product-inputs input:first-of-type{
+    width: 45%;
+    margin: 20px 0;
+    border: 1px solid var(--text-color);
+    padding: 8px 8px;
+    color: #ccc;
+    font-size: 15px;
+}
+.products .product-details .product-inputs #check-input{
+    background-color: var(--footer-color);
+    color: #fff;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    right: 55%;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    padding: 3px 24px;
+    border: 1px solid rgba(179, 189, 199, 1);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.products .product-details .product-inputs #check-input:hover{
+    background-color: var(--nested-text-color);
+}
+.products .more-productDetails h5{
+    background-color: var(--footer-color);
+    color: #fff;
+    text-align: center;
+    font-size: 1em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 12px 20px;
+    cursor: pointer;
+}
+.products .more-productDetails ul li{
+    font-size: 18px;
+}
+.products .more-productDetails ul li:nth-of-type(2){
+    color: var(--nested-text-color);
+    cursor: pointer;
+}
+
+/* contact */
+.left-contact button{
+    color: var(--text-color);
+    font-size: 24px;
+    border: 1px solid var(--text-color);
+    border-radius: 4px;
+    margin: 18px auto;
+    text-align: center;
+    transition: all 0.5s;
+}
+.left-contact button:hover{
+    background-color: var(--nested-text-color);
+    color: #fff;
+}
+.right-contact ul li i{
+    font-size: 18px;
+    color: var(--nested-text-color);
+    padding-right: 8px;
+    padding-bottom: 14px;
+}
+.right-contact .contact-icons span i .li-icon-contact{
+    cursor: pointer;
+}
+.right-contact .contact-icons span i .li-icon-contact:nth-of-type(1){
+    color: blue;
+}
+.right-contact .contact-icons span i .li-icon-contact:nth-of-type(2){
+    color: red;
+}
+.right-contact .contact-icons span i .li-icon-contact:nth-of-type(3){
+    color: black;
+}
+.right-contact .contact-icons span i .li-icon-contact:nth-of-type(4){
+    color: blue;
+}
